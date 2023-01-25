@@ -9,6 +9,8 @@ export default function AdvertCards() {
       <p>Join our cycle to work group!
         We meet in the town center and then we shall cycle to work from there.
       </p>
+      <p>This project was started with the goal of helping those who live  </p>
+AB akrow  krow ruo ot
     </div>
     </>)
 }

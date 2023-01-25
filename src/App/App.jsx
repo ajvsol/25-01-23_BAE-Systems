@@ -6,19 +6,17 @@ import Blog from '../pages/Blog';
 import Advert from '../pages/Advert';
 import Profile from '../pages/Profile';
 import Search from '../pages/Search';
-import Navbar from '../components/NavBar'
 
 export default function App() {
   return (
     <div className="App">
-<Navbar/>
-    <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="blog" element={<Blog/>} />
-        <Route path="advert" element={<Advert/>}/>
-        <Route path ="profile" element={<Profile/>}/>
-        <Route path ="search" element={<Search/>}/>
-    </Routes>
+      <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path ="search" element={<Search/>}/>
+          <Route path="blog" element={<Blog/>} />
+          <Route path="advert" element={<Advert/>}/>
+          <Route path ="profile" element={<Profile/>}/>
+      </Routes>
     </div>
   );
 }

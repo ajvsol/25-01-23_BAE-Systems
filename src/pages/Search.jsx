@@ -3,6 +3,7 @@ import { StateContextProvider } from '../context/StateContext';
 import NavBar from '../components/NavBar';
 import SearchBar from '../components/SearchBar';
 import AdvertCards from '../components/AdvertCards'
+import PostCards from "../components/PostCards"
 
 export default function Search() {
     return (
@@ -10,6 +11,7 @@ export default function Search() {
 				<NavBar/>
 				<SearchBar/>
 				<AdvertCards/>
+				<PostCards/>
 			</>
     )
 }

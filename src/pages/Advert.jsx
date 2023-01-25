@@ -1,10 +1,10 @@
 import React from 'react'
-import { useStateContext } from "../context/StateContext";
+import NavBar from '../components/NavBar';
 
 export default function Advert() {
-  const { selectedAdvert, setSelectedAdvert } = useStateContext()
 
-  return (
-    <div>advertPage</div>
+  return (<>
+      <NavBar/>
+    </>
   )
 }

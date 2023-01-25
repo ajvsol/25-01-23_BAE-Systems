@@ -1,15 +1,17 @@
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../../src/public/pics/Logo.png"
+import Logo from '../pics/Logo.png'
+import { Navbar } from "flowbite-react";
 
 
 export default function NavBar() {
-    return <>
+    return (<div className='bg-blue-100'>
        <img id='baeco-icon' src={Logo} alt=''/>
         <div id='navbar-links'>
             <Link to="/">Home</Link>
-            <Link to="/SearchPage">Search</Link>
-            <Link to= '/Blog'> Blog </Link>
-            <Link to="/contact">Profile</Link>
+            <Link to="/search">Search</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/advert">Advert</Link>
+            <Link to= '/profile'>Profile </Link>
         </div>
-    </>
+    </div>)
 }

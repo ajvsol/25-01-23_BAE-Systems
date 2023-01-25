@@ -1,16 +1,16 @@
 import React from 'react'
 
-const PostCards = ({title, }) => {
+export default function PostCards ({title, location, hours, information }) {
   return (
     <div className="card">
       <div className="card-header">
-        {props.header}
+        <h3>{title}</h3>
       </div>
-      <div className="card-body">
-        {props.children}
-      </div>
+      <div className="card-body"></div>
+        <p>Location: {location}</p>
+        <p>Hours: {hours}</p>
+        <p>Information: {information}</p>
     </div>
   );
-};
+  }
 
-export default Card;
